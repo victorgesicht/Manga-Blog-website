@@ -1,7 +1,7 @@
 
 import NavBar from "./components/NavBar"
 import Content from "./components/Content"
-
+import AnimeList from "./components/animeList"
 function App() {
 
 
@@ -9,7 +9,7 @@ function App() {
     <>
       <NavBar/>
       <Content/>
-      
+      <AnimeList/>
     </>
   )
 }
