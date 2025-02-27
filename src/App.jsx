@@ -1,6 +1,6 @@
-import Icons from "./components/Icons"
+
 import NavBar from "./components/NavBar"
-import Icon from "./components/Icons"
+import Content from "./components/Content"
 
 function App() {
 
@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <NavBar/>
-      <Icon/>
+      <Content/>
       
     </>
   )

@@ -1,14 +1,23 @@
-
+import logo from '../assets/anonymous.svg'
 
 const NavBar = () => {
   return (
-    <div className="top-0 flex flex-col  text-white justify-start space-x-4 w-32 h-screen bg-black">
-        <div className="m-4">Home</div>
-        <div className="m-4">Projects</div>
-        <div className="m-4">Blog</div>
-        <div className="m-4">About</div>
-        <div className="m-4">Downloads</div>
-        <div className="m-4">Terms and Conditions</div>
+
+    //navbar component begins here
+    <div>
+    <nav className="flex bg-gray-400 text-white w-full h-12 justify-normal mt-0 pt-2  ">
+      
+      
+        <div className='mr-2 ml-2'>
+          <img src={logo} alt="logo" className='bg-gray-400 h-8 w-8'/>
+        </div>
+
+        <div>
+        <span className='flex text-black font-semibold mr-2'>
+          Kengan Ashura
+        </span>
+        </div>
+    </nav>
     </div>
   )
 }
