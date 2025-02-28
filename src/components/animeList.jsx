@@ -5,10 +5,9 @@ import { useState, useEffect } from "react";
 const AnimeList = () => {
     const [animeList, setAnimeList] = useState([]);
     const [loading, setLoading] = useState(true);
-
     const fetchData = async () => {
         try{
-        const response = await axios.get("https://api.jikan.moe/v4/anime?q=%E6%96%B0%E4%B8%96%E7%B4%80&sfw");
+        const response = await axios.get("https://anime-facts-rest-api.herokuapp.com/api/v1");
         console.log(response.data.top);
         setLoading(false);
         }catch(error){       
